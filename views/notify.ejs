@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title></title>
+        <link rel="stylesheet" href="/css/custom.css">
+        <script src="/js/jquery-3.4.1.min.js"></script>
+    </head>
+    <body >
+      <div id="wholepage">
+		  <div id="form-section">
+			<div id="form-header">
+				<h3>EC Notification</h3>
+			</div>
+			<div id="form-body">
+			<form action="/notify" method="post">
+			   <div class="holder1">
+			   <br>
+					<input type="text" id="title" name="title" placeholder="Title of message" maxlength="63"><br>
+				</div>
+				
+				<div class="holder2">
+				<br>
+					<input type="file" id="graphic" name="graphic" accept="image/*" class="feedback-input" placeholder="Add an image"><br>
+				</div>
+				
+				 <div class="holder5">
+			   <br>
+					<input type="url" id="url" name="url" placeholder="link to full notification"><br>
+				</div>
+				
+				
+				<div class="holder3">
+				<br>
+					<textarea id="message" name="message" rows="8" cols="50" maxlength="181" placeholder="please enter message here"></textarea>
+				</div>
+				
+				<div class="holder4">
+				 <button type="submit" id="submit" name="submit">Notify</button>
+				</div>
+				</form>
+			</div>
+		  </div>
+	  </div>
+    </body>
+</html>
